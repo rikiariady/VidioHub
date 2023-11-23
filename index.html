@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>VidioHub</title>
 </head>
 <body>
     <header>
-        <h1>VidioHub</h1>
+        <div id="menu-icon">&#9776;</div>
+        <span id="web-name">Vidio<span id="hub">Hub</span></span>
+        <nav id="nav">
+            <a href="#">Video 1</a>
+            <a href="#">Video 2</a>
+            <a href="#">Video 3</a>
+            <!-- Tambahkan lebih banyak item menu jika diperlukan -->
+        </nav>
     </header>
-    <main>
-        <video controls id="videoPlayer">
-            <source src="https://streamtape.com/v/61leVw8ODqU93WL/HEYZO-2054.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </main>
+
+    <!-- Isi konten halaman web di sini -->
+    <div id="video-container">
+        <!-- Tempat untuk menambahkan video -->
+        <div class="video">
+            <iframe src="https://streamtape.com/e/61leVw8ODqU93WL/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+        </div>
+        <!-- Tambahkan lebih banyak video jika diperlukan -->
+    </div>
+
     <script src="script.js"></script>
 </body>
-</html
+</html>
