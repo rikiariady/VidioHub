@@ -7,21 +7,26 @@
 </head>
 <body>
     <header>
-        <div id="menu-icon">&#9776;</div>
-        <span id="web-name">Vidio<span id="hub">Hub</span></span>
-        <nav id="nav">
-            <a href="#">Video 1</a>
-            <a href="#">Video 2</a>
-            <a href="#">Video 3</a>
-            <!-- Tambahkan lebih banyak item menu jika diperlukan -->
-        </nav>
+        <div id="header-content">
+            <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <div id="branding">
+                <span id="web-name">Vidio<span id="hub">Hub</span></span>
+            </div>
+            <nav id="nav">
+                <a href="#">Video 1</a>
+                <a href="#">Video 2</a>
+                <a href="#">Video 3</a>
+                <!-- Tambahkan lebih banyak item menu jika diperlukan -->
+            </nav>
+        </div>
     </header>
 
     <!-- Isi konten halaman web di sini -->
     <div id="video-container">
         <!-- Tempat untuk menambahkan video -->
         <div class="video">
-            <iframe src="https://streamtape.com/e/61leVw8ODqU93WL/" width="640" height="360" allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>      </div>
+            <iframe src="https://streamtape.com/e/61leVw8ODqU93WL/" width="100%" height="auto" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+        </div>
         <!-- Tambahkan lebih banyak video jika diperlukan -->
     </div>
 
