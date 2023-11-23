@@ -42,3 +42,25 @@ nav {
 .video {
     margin: 10px;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav a {
+        display: block;
+        padding: 10px;
+    }
+}
