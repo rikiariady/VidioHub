@@ -21,6 +21,15 @@ header img {
     cursor: pointer;
 }
 
+#searchButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 nav {
     display: flex;
 }
@@ -40,7 +49,7 @@ nav a {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Adjust this value based on your header height */
+        top: 60px;
         left: 0;
         background-color: #333;
         width: 100%;
@@ -53,10 +62,44 @@ nav a {
 
     nav a {
         margin: 10px 0;
-        text-align: center; /* Center-align navigation links */
+        text-align: center;
+    }
+
+    #searchButton {
+        order: 1;
     }
 }
 
+.video-container {
+    position: relative;
+    margin-bottom: 20px; /* Spacing between videos */
+}
+
+.video-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-details h2 {
+    margin: 0;
+}
+
+.download-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 video {
-    width: 100%; /* Ensure the video is responsive */
+    width: 100%;
 }
