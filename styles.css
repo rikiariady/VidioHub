@@ -53,4 +53,6 @@ nav a {
 
     nav a {
         margin: 10px 0;
+        text-align: center; /* Center-align navigation links */
     }
+}
