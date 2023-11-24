@@ -14,7 +14,7 @@ header {
 
 header img {
     width: auto;
-    height: 50px; /* Sesuaikan tinggi sesuai kebutuhan */
+    max-height: 50px; /* Sesuaikan tinggi sesuai kebutuhan */
 }
 
 #hamburger,
@@ -22,61 +22,30 @@ header img {
     width: 50px; /* Sesuaikan lebar sesuai kebutuhan */
 }
 
-.video-container {
-    position: relative;
-    margin-bottom: 20px; /* Spacing between videos */
-    text-align: center; /* Center-align content */
-    overflow: hidden; /* Mengatasi panjang video melebihi container */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header img {
+        max-height: 40px; /* Sesuaikan tinggi sesuai kebutuhan untuk perangkat seluler */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #searchButton {
+        order: 1;
+    }
 }
 
-.video-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column; /* Stack elements vertically */
-}
-
-.video-details h2 {
-    margin-bottom: 10px; /* Add space below the title */
-}
-
-.download-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.video {
-    width: 100%;
-}
-
-.pagination {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-}
-
-.pagination a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.pagination a:hover:not(.active) {
-    background-color: #ddd;
-}
+/* ... (CSS for video containers, pagination, etc.) */
