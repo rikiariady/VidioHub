@@ -46,6 +46,69 @@ header img {
     #searchButton {
         order: 1;
     }
+
+    .video-container {
+        max-width: 100%; /* Sesuaikan agar penuh lebar pada perangkat seluler */
+    }
 }
 
-/* ... (CSS for video containers, pagination, etc.) */
+.video-container {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.video-details h2 {
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+.download-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.video {
+    width: 100%;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    }
