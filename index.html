@@ -4,55 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Video Page</title>
+    <title>VidioHub</title>
 </head>
 <body>
-
     <header>
-        <div id="hamburger">&#9776;</div>
-        <img src="https://raw.githubusercontent.com/rikiariady/VidioHub/796c3761697da262a6fffdef502ef523027ce9f9/IMG_20231123_232513-removebg-preview.png" alt="Logo">
-        <button id="searchButton">Search</button>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/rikiariady/VidioHub/796c3761697da262a6fffdef502ef523027ce9f9/IMG_20231123_232513-removebg-preview.png" alt="VidioHub Logo">
+        </div>
+        <div class="nav-container">
+            <div class="hamburger-icon">&#9776;</div>
+            <div class="share-button">Share</div>
+        </div>
     </header>
 
-    <nav>
-        <!-- Add your navigation links here -->
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <!-- Repeat the following block for each additional video -->
-    <div class="video-container">
-        <video width="640" height="360" controls>
-            <source src="path/to/your/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="video-details">
-            <h2>Video 1 Title</h2>
-            <a href="path/to/your/downloadable/video1.mp4" download class="download-button">Download</a>
+    <section class="video-section">
+        <div class="video">
+            <h2>Judul Video 1</h2>
+            <iframe width="560" height="315" src="https://path-to-your-video.com/video1.mp4" frameborder="0" allowfullscreen></iframe>
+            <p>Deskripsi video 1.</p>
+            <a href="#" class="download-button">Download Video 1</a>
         </div>
-    </div>
 
-    <div class="video-container">
-        <video width="640" height="360" controls>
-            <source src="path/to/your/video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="video-details">
-            <h2>Video 2 Title</h2>
-            <a href="path/to/your/downloadable/video2.mp4" download class="download-button">Download</a>
+        <div class="video">
+            <h2>Judul Video 2</h2>
+            <iframe width="560" height="315" src="https://path-to-your-video.com/video2.mp4" frameborder="0" allowfullscreen></iframe>
+            <p>Deskripsi video 2.</p>
+            <a href="#" class="download-button">Download Video 2</a>
         </div>
-    </div>
 
-    <!-- Add 5 more video containers similarly -->
+        <!-- Add more video elements as needed -->
 
-    <div class="pagination">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <!-- Add more page links as needed -->
-    </div>
+        <div class="video">
+            <h2>Judul Video 3</h2>
+            <iframe width="560" height="315" src="https://path-to-your-video.com/video3.mp4" frameborder="0" allowfullscreen></iframe>
+            <p>Deskripsi video 3.</p>
+            <a href="#" class="download-button">Download Video 3</a>
+        </div>
+
+        <!-- Add more video elements as needed -->
+    </section>
 
     <script src="script.js"></script>
-
 </body>
-</html
+</html>
