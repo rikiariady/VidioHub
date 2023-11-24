@@ -1,16 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Hamburger icon toggle
-    const hamburgerIcon = document.querySelector('.hamburger-icon');
-    const navContainer = document.querySelector('.nav-container');
+    const searchButton = document.querySelector('.search-button');
 
-    hamburgerIcon.addEventListener('click', function () {
-        navContainer.classList.toggle('show-nav');
+    searchButton.addEventListener('click', function () {
+        const searchTerm = prompt('Enter your search term:'); // Prompt user for search term
+        if (searchTerm) {
+            // Implement your search logic here
+            alert(`Search functionality for "${searchTerm}" can be implemented here.`);
+        }
     });
-
-    // Share button click
-    const shareButton = document.querySelector('.share-button');
-
-    shareButton.addEventListener('click', function () {
-        alert('Share functionality can be implemented here.'); // Implement your share logic
-    });
-});
+})
