@@ -32,22 +32,21 @@ header {
     color: white;
 }
 
-.share-button {
-    cursor: pointer;
-    background-color: #4CAF50;
+.search-button {
+    display: block;
+    margin-right: 20px; /* Menyesuaikan jarak dengan ikon hamburger */
+    background-color: #4285f4; /* Warna latar belakang search button */
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.hamburger-icon, .share-button {
-    transition: transform 0.3s ease-in-out;
-}
-
-.hamburger-icon:hover, .share-button:hover {
-    transform: scale(1.1);
+.search-button:hover {
+    background-color: #3367d6; /* Warna latar belakang search button saat dihover */
 }
 
 .video-section {
@@ -79,6 +78,7 @@ a.download-button {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 a.download-button:hover {
@@ -90,4 +90,4 @@ a.download-button:hover {
     .video {
         width: 100%;
     }
-        
+    
