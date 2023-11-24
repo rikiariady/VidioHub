@@ -73,6 +73,11 @@ nav a {
 .video-container {
     position: relative;
     margin-bottom: 20px; /* Spacing between videos */
+    text-align: center; /* Center-align content */
+}
+
+.video-container h1 {
+    margin-bottom: 10px; /* Add space below the "Vidio" heading */
 }
 
 .video-details {
@@ -86,10 +91,11 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 .video-details h2 {
-    margin: 0;
+    margin-bottom: 10px; /* Add space below the title */
 }
 
 .download-button {
