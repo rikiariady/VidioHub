@@ -17,7 +17,11 @@ header img {
     max-height: 50px; /* Sesuaikan tinggi sesuai kebutuhan */
 }
 
-#hamburger,
+#hamburger {
+    width: 50px; /* Sesuaikan lebar sesuai kebutuhan */
+    order: -1; /* Pindahkan hamburger ke kiri */
+}
+
 #searchButton {
     width: 50px; /* Sesuaikan lebar sesuai kebutuhan */
 }
@@ -44,7 +48,7 @@ header img {
     }
 
     #searchButton {
-        order: 1;
+        order: 1; /* Pindahkan tombol search ke kanan */
     }
 }
 
