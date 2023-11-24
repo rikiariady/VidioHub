@@ -1,4 +1,6 @@
-function toggleMenu() {
-    var nav = document.getElementById("nav");
-    nav.style.display = (nav.style.display === "block") ? "none" : "block";
-}￼Enter
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', function () {
+    nav.classList.toggle('active');
+});
